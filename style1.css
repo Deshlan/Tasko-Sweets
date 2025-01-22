@@ -1,0 +1,207 @@
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    color: white;
+}
+.personal_logo {
+    font-size: 24px;
+    color: rgb(245, 247, 248);
+    margin: 0 12px;
+    font-weight: bold;
+  }
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgb(5, 194, 241);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navbar li {
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+  }
+  #navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    transition: 0.3 ease;
+  }
+  #navbar li a:hover,
+  #navbar li a.active {
+    color: rgb(245, 247, 248);
+  }
+  #navbar li a.active::after,
+  #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(245, 247, 248);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+  #mobile{
+    display: none;
+    align-items: center;
+  }
+  #close{
+    display: none;
+  }
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(244, 25, 153, 0.1),rgba(254, 21, 188, 0.1)), url(IMG/Backdrop4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 400px;
+    height: 480px;
+    position: relative;
+    margin: 10% auto;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 5px;
+    overflow: hidden;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+}
+input:focus ~label,
+input:valid ~label{
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 25px 0 5px;
+    color: white;
+}
+.inputbox i{
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 17px;
+    top: 17px;
+}
+.Remember{
+    margin: -15px 0 15px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: .9em;
+    color: white;
+    justify-content: center;
+}
+.Remember label{
+    margin-right: 3px;
+}
+.Remember label a{
+    color: white;
+    text-decoration: none;
+}
+.Remember label a:hover{
+    text-decoration: underline;
+}
+#btn{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient( rgb(31, 191, 236),rgb(31, 191, 236));
+    border: white;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons i{
+    width: 30px;
+    font-size: 20px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 125px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+.checkbox{
+    margin: 20px 10px 30px 0;
+}
+#login{
+    left: 50px;
+}
+.End{
+ width: 110%;
+ height: 40px;
+ border-radius: 40px;
+ background: rgb(31, 191, 236);
+ border: none;
+ outline: none;
+ cursor: pointer;
+ font-size: 1em;
+ font-weight: 600;
+ margin-top: 20px;
+}
+.End:hover{
+    text-decoration: underline;
+}
+.forget{
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.forget a{
+    text-decoration: none;
+    font-weight: 300;
+}
+.forget a:hover{
+    text-decoration: underline;
+}

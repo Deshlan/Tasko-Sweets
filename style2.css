@@ -1,0 +1,120 @@
+
+
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(25, 142, 142);
+}
+
+.container{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    max-width: 900px;
+    max-height: 700px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 0 15px;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons i{
+    width: 30px;
+    font-size: 20px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: rgb(255, 255, 255);
+}
+.container form .form{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.detail_goal{
+    margin-top: 30px;
+}
+.title{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgb(51, 51, 51);
+}
+.fields{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.input-field{
+    display: flex;
+    width: calc(100% / 3 - 30px);
+    flex-direction: column;
+    margin: 4px 10px;
+}
+.input-field input,select{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+.input-field label,select{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+.input-field input,select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    margin: 25px 0;
+    width: 100%;
+}
+.button input[type="submit"]{
+    background-color:rgba(170, 170, 170, 0.1);
+    border:none;
+}
+button:hover{
+    background-color: rgb(5, 194, 241);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.button i{
+    margin: 0px 10px;
+}
